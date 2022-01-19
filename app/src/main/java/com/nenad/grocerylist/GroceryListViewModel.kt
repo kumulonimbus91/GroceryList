@@ -10,6 +10,12 @@ class GroceryListViewModel (private val repository: GroceryListRepository):ViewM
 
 
     fun insert(item: GroceryListItem) = GlobalScope.launch {
-
+          repository.insert(item)
     }
+
+    fun delete(item:GroceryListItem) = GlobalScope.launch {
+        repository.delete(item)
+    }
+
+    suspend fun getAllGroceryItems(items: GroceryListItem) = repository.getAllItems(items)
 }
