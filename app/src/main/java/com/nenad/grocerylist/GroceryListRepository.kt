@@ -6,6 +6,6 @@ class GroceryListRepository(private val db:Database) {
 
     suspend fun delete(item: GroceryListItem) = db.getGroceryDao().delete(item)
 
-    suspend fun getAllItems(item: GroceryListItem) = db.getGroceryDao().getAllGrocieries()
+    fun getAllItems() = db.getGroceryDao().getAllGrocieries()
 
 }

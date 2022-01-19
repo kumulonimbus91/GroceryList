@@ -17,5 +17,5 @@ class GroceryListViewModel (private val repository: GroceryListRepository):ViewM
         repository.delete(item)
     }
 
-    suspend fun getAllGroceryItems(items: GroceryListItem) = repository.getAllItems(items)
+    fun getAllGroceryItems() = repository.getAllItems()
 }
