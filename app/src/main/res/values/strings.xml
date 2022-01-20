@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GroceryList</string>
+    <string name="add_items_to_card">Add items to card</string>
+    <string name="enter_grocery_name">Enter grocery name</string>
+    <string name="enter_item_price">Enter item price</string>
+    <string name="enter_desired_amount">Enter desired amount</string>
 </resources>
